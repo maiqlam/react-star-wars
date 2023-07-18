@@ -15,7 +15,7 @@ code {
 
 .shipCard {
   height: 100px;
-  width: 300px;
+  width: 260px;
   background-color: rgb(1, 70, 70);
   color: white;
   padding: 3rem;
@@ -45,5 +45,9 @@ header {
 .shipCard h2 {
   font-weight: normal;
   font-size: 32px;
+  text-align: center;
+}
+
+.shipCard p {
   text-align: center;
 }

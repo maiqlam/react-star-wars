@@ -4,7 +4,7 @@ import StarShipCard from "./components/StarShipCard";
 
 function App() {
   const [starships, setStarships] = useState([]);
-
+  const [selectedStarship, setSelectedStarship] = useState(null);
   useEffect(() => {
     async function fetchData() {
       const data = await getAllStarships();
@@ -14,6 +14,10 @@ function App() {
     fetchData();
   }, []);
 
+  function handleStarshipClick(starship) {
+    setSelectedStarship(starship)
+  }
+
   return (
     <div className="App">
     <header>STAR WARS STARSHIPS</header>
@@ -21,8 +25,13 @@ function App() {
     {starships.map((starship) => (
         <StarShipCard 
           starship={starship}
+          onClick={() => handleStarshipClick(starship)}
         />
-      ))}</div>
+      ))}
+      </div>
+      <div className="nextPage">
+        <a href="{starship.next}">Next Page</a>
+      </div>
     </div>
   );
 }
