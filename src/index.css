@@ -51,3 +51,18 @@ header {
 .shipCard p {
   text-align: center;
 }
+
+.seeMore {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.moreBtn {
+  padding: 1rem;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  font-style: oblique;
+  box-shadow: 3px 3px 5px rgb(183, 187, 187);
+}

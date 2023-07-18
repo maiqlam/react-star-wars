@@ -29,9 +29,9 @@ function App() {
         />
       ))}
       </div>
-      <div className="nextPage">
-        <a href="{starship.next}">Next Page</a>
-      </div>
+      {/* <div className="seeMore">
+        <button className="moreBtn">See More</button>
+      </div> */}
     </div>
   );
 }
